@@ -16,6 +16,12 @@ class ArtistsController < ApplicationController
     redirect_to artist_url(@artist)
   end
 
+  def edit
+  end
+
+  def update
+  end
+
 
   private
   def list_params
