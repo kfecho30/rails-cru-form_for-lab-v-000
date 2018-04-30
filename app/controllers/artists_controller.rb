@@ -12,5 +12,12 @@ class ArtistsController < ApplicationController
   end
 
   def create
+    @artist = 
+  end
+
+
+  private
+  def list_params
+    params.require(:artist).permit(:name, :bio)
   end
 end
