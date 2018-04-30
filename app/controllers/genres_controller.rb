@@ -25,8 +25,7 @@ class GenresController < ApplicationController
     @genre = Genre.find(params[:id])
     @genre.update(list_params)
     redirect_to genres_url
-
-
+  end
 
   private
   def list_params
